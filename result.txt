@@ -13,3 +13,12 @@ practice2
   | alibaba     | xiaohong |
   | tengxun     | xiaozhi  |
   +-------------+----------+
+
+practice3
+  +-------------+-----------+
+  | companyName | avgSalary |
+  +-------------+-----------+
+  | baidu       | 5000.0000 |
+  | alibaba     | 6500.0000 |
+  | tengxun     | 8000.0000 |
+  +-------------+-----------+
