@@ -4,4 +4,4 @@ SELECT companyId, avg(salary) AS avgSalary from employee GROUP BY employee.compa
 
 #输出公司名称和平均薪水：companyName avgSalary
 
-SELECT companyName, avgSalary FROM (SELECT companyId, avg(salary) AS avgSalary FROM Employee GROUP BY companyId) A INNER JOIN Company B ON A.companyId=B.id
+SELECT companyName, avgSalary FROM (SELECT companyId, avg(salary) AS avgSalary FROM Employee GROUP BY companyId) A INNER JOIN Company B ON A.companyId=B.id;

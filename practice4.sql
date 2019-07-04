@@ -3,4 +3,4 @@
 # id | name | age | gender | companyId | salary | companyName | avgsal
 
 SELECT * FROM (SELECT A.*, B.avgsal FROM  (SELECT employee.*, company.companyName FROM Employee LEFT JOIN Company ON Employee.companyId = Company.id) A LEFT JOIN (SELECT companyId, avg(salary) AS avgsal FROM Employee GROUP BY companyId) B ON A.companyId = B.companyId
-) t WHERE t.salary >= t.avgsal
+) t WHERE t.salary >= t.avgsal;
